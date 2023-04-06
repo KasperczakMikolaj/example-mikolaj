@@ -1,9 +1,7 @@
-# trapez
-a = 3
-b = 4
-c = 2
-h = 5
-obwod  = 2* a + 2*4 + 2*c
-pole = (a+b)*h/2
-print ("obwod trapezu wynosi" + str(obwod) + ", pole" + str(pole)+".")
-print(pole)
+# kwadrat
+a = 10
+obwód  = a * 4
+pole = a * a
+# obrod kawadratu wynosi 40, a pole 100 
+ print ("obwod kwadratu wynosi" + str(obwód) + ", pole" + str(pole)+".")
+ print(pole)
