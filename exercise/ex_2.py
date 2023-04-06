@@ -1,6 +1,6 @@
-
-#koło
-pi = 3,14
-r = 5
-obwod  = 2 * pi * r
-pole = pi * r * r
+#romb
+a = 10
+b = 5
+h = 4
+obwod  = 2 * a + 2 * b
+pole = a * h/2
