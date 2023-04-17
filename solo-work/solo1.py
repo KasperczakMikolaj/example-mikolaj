@@ -31,3 +31,15 @@ potega = 4
 wynik = liczba ** potega
 
 print("Wynik wynosi:", wynik)
+
+
+# zadanie 1.6
+
+ciag_znakow = "edbw(hdakqas(skqskahb))adwndwb(wgwidn()dsqwhjdw)"
+liczba_nawiasow_otwierajacych = 0
+
+for znak in ciag_znakow:
+    if znak == "(":
+        liczba_nawiasow_otwierajacych += 1
+
+print("Liczba nawiasow otwierajacych wynosi:", liczba_nawiasow_otwierajacych)
