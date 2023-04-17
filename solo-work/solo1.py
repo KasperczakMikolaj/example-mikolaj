@@ -53,3 +53,15 @@ studenci.sort(key=lambda x: x.split()[0])
 print("Alfabetyczna lista studentow wynosi: ")
 for student in studenci:
     print(student)
+
+
+
+# zadanie 1.8
+
+studenci = ["Anna Szczesny", "Tomasz Nijaki", "Barbara Kowalska", "Jan Niezbedny"]
+
+posortowani_studenci = sorted(studenci, key=lambda x: x.split()[-1])
+
+print("Alfabetyczna lista studentow wynosi: ")
+for student in posortowani_studenci:
+    print(student)
