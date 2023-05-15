@@ -18,3 +18,19 @@ trojkat_rownoboczny = Trojkat(10, 10, 10, 8)
 trojkat_mikolaja = Trojkat(8, 6, 10, 4)
 print(trojkat_rownoboczny.obwod())
 print(trojkat_mikolaja.pole())
+
+
+class Kwadrat:
+    def __init__ (self, a):
+        self.bok_a = a
+
+    def obwod(self):
+        return (self.bok_a * 4)
+    
+    def pole(self):
+        return (self.bok_a ** 2)
+
+kwadrat_mikolaja = Kwadrat(12)
+print(kwadrat_mikolaja.obwod())
+print(kwadrat_mikolaja.pole())
+    
