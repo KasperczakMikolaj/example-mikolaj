@@ -64,7 +64,7 @@ print(student_mikolaj.zwroc_srednia())
 print("========================================================")
 
 class Samochody:
-    def __init__(self, marka, model, typ_nadwozia, silnik, kolor, wersja_wyposazenia, rocznik):
+    def __init__(self, marka, model, typ_nadwozia, silnik, kolor, wersja_wyposazenia, rocznik, przebieg):
         self.marka = marka
         self.model = model
         self.typ_nadwozia = typ_nadwozia
@@ -72,14 +72,13 @@ class Samochody:
         self.kolor = kolor
         self.wersja_wyposazenia = wersja_wyposazenia
         self.rocznik = rocznik
+        self.przebieg = przebieg
 
     def __str__(self):
-        return f"{self.marka} {self.model} {self.typ_nadwozia} {self.silnik} {self.kolor} {self.wersja_wyposazenia} {self.rocznik}"
+        return f"{self.marka} {self.model} {self.typ_nadwozia} {self.silnik} {self.kolor} {self.wersja_wyposazenia} {self.rocznik} {self.przebieg}"
     
-    def __int__(self):
-        return 10
     
-samochod_moj = Samochody("Ford", "Mondeo", "Hatchback", "1.6_benzyna", "czarny", "Ghia", "2014")
+samochod_moj = Samochody("Ford", "Mondeo", "Hatchback", "1.6_benzyna", "czarny", "Ghia", "2014", "103000 km")
 print(samochod_moj)
 
     
