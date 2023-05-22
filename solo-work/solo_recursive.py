@@ -19,6 +19,28 @@ sum = lista(mikolaj_lista)
 print(sum)
 #pseudokod
 #l.pop
+print("-----------------------------------------------------------------------------------------")
+
+def najwieksza_wartosc(lista):
+    if len(lista) == 1:
+        return lista[0]
+    else:
+        jeden = lista[0]
+        reszta = lista[1:]
+        reszta = najwieksza_wartosc(reszta)
+        if jeden > reszta:
+            return jeden
+        else:
+            return reszta
+        
+moja_lista = [1,2,3]
+max_element = najwieksza_wartosc(moja_lista)
+print("Największa wartość z listy wynosi",  str(max_element))
+
+#drugipseudokod
+print("-----------------------------------------------------------------------------------------")
+
+
 
 
 
