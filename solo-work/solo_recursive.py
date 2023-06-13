@@ -17,8 +17,8 @@ def lista(wybrana_lista):
 mikolaj_lista = [1,2,3,4]
 sum = lista(mikolaj_lista)
 print(sum)
-#pseudokod
-#l.pop
+#funkcja lista sumuje rekurencyjnie wszystkie elementy danej listy, zaczynając od pierwszego elementu i dodając go do sumy reszty listy, aż do momentu, gdy lista jest pusta. Wynik sumy jest wypisywany na końcu.
+
 print("-----------------------------------------------------------------------------------------")
 
 def najwieksza_wartosc(lista):
@@ -37,9 +37,26 @@ moja_lista = [1,2,3]
 max_element = najwieksza_wartosc(moja_lista)
 print("Największa wartość z listy wynosi",  str(max_element))
 
-#drugipseudokod
+ #funkcja rekurencyjnie dzieli listę na część pierwszą i resztę, a następnie znajduje największą wartość w reszcie listy. W końcu porównuje tę wartość z pierwszym elementem listy i zwraca większą wartość jako największą wartość w całej liście.
+
 print("-----------------------------------------------------------------------------------------")
 
+#2. Suma Listy
+# is l empty ? 
+#(yes) y -> 0
+#(no) n -> l(0) + suma(reszta)
+
+def sum_list(lista):
+    if len(lista) == 0:    
+        return 0           
+    else:
+        return lista[0] + sum_list(lista[1:])   
+
+#lista_Mikolaj#wywołanie sumy listy
+lista_Mikolaj = [1,2,3,4,5]
+sum = sum_list(lista_Mikolaj)
+print(f"Wynik to:", sum)
+print("---------------------------------------")
 
 
 
