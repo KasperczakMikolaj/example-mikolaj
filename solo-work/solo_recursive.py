@@ -41,7 +41,7 @@ print("Największa wartość z listy wynosi",  str(max_element))
 
 print("-----------------------------------------------------------------------------------------")
 
-#2. Suma Listy
+# Suma Listy
 # is l empty ? 
 #(yes) y -> 0
 #(no) n -> l(0) + suma(reszta)
@@ -52,12 +52,27 @@ def sum_list(lista):
     else:
         return lista[0] + sum_list(lista[1:])   
 
-#lista_Mikolaj#wywołanie sumy listy
+#lista_Mikolaj
 lista_Mikolaj = [1,2,3,4,5]
 sum = sum_list(lista_Mikolaj)
 print(f"Wynik to:", sum)
 print("---------------------------------------")
 
+# Silnia
+#Silnia(i)
+# Czy i = 0     ?     
+# (yes) y - 1 bo 0!=1
+# (no)  y - i * silnia(i-1)
+
+def Silnia(i):
+    if i == 0:       
+        return 1
+    else:
+        return i * Silnia(i-1)
+licz= 5
+wynik = Silnia(licz)
+print(f"Silnia wynosi:", wynik)
+print("----------------------")
 
 
 
